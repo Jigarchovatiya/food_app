@@ -31,7 +31,7 @@ class _FoodAppScreenState extends State<FoodAppScreen> {
             Stack(
               children: [
                 Container(
-                  height: 230,
+                  height: 300,
                   decoration: const BoxDecoration(
                     color: Color(0xFFDAB947),
                   ),
@@ -79,7 +79,7 @@ class _FoodAppScreenState extends State<FoodAppScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.only(top: 170),
-                  height: 560,
+                  height: 550,
                   width: double.infinity,
                   clipBehavior: Clip.antiAlias,
                   decoration: const BoxDecoration(
@@ -95,11 +95,11 @@ class _FoodAppScreenState extends State<FoodAppScreen> {
                       const SizedBox(
                         height: 30,
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(10),
+                      const Padding(
+                        padding: EdgeInsets.all(10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: const [
+                          children: [
                             Text(
                               "*Salad",
                               style: TextStyle(color: Color(0xFFDAB947), fontSize: 16),
@@ -258,9 +258,9 @@ class _FoodAppScreenState extends State<FoodAppScreen> {
                                       ),
                                       borderRadius: BorderRadius.circular(10),
                                     ),
-                                    child: Row(
+                                    child: const Row(
                                       mainAxisAlignment: MainAxisAlignment.end,
-                                      children: const [
+                                      children: [
                                         SizedBox(
                                           width: 20,
                                         ),
@@ -469,9 +469,9 @@ class _FoodAppScreenState extends State<FoodAppScreen> {
                                       ),
                                       borderRadius: BorderRadius.circular(10),
                                     ),
-                                    child: Row(
+                                    child: const Row(
                                       mainAxisAlignment: MainAxisAlignment.end,
-                                      children: const [
+                                      children: [
                                         SizedBox(
                                           width: 20,
                                         ),
@@ -494,6 +494,9 @@ class _FoodAppScreenState extends State<FoodAppScreen> {
                           ),
                         ],
                       ),
+                      const SizedBox(
+                        height: 50,
+                      ),
                     ],
                   ),
                 ),
@@ -505,9 +508,9 @@ class _FoodAppScreenState extends State<FoodAppScreen> {
       bottomSheet: Container(
         color: Colors.white,
         height: 60,
-        child: Row(
+        child: const Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: const [
+          children: [
             Icon(
               Icons.home_outlined,
               color: Color(0xFFDAB947),
